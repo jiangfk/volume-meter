@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Volume Meter Sample</title>
+	<style>
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.10.2/dist/video-js.min.css">
+	<script src="vumeter.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/video.js@7.10.2/dist/video.min.js"></script>
+	<!-- Include the volume meter component -->
+	<!-- Include the main app logic -->
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<p><button onclick="startMeter();">Start</button></p>
+	<canvas id="leftmeter" width="40" height="250" data-volume="0"></canvas>
+	<canvas id="rightmeter" width="40" height="250" data-volume="0"></canvas>
+	<video width="500" height="300" crossOrigin="anonymous" id="play-channel-video"
+		class="video-js vjs-big-play-centered video-js vjs-default-skin can-event" data-setup='{}' controls
+		preload="auto">
+	</video>
+</body>
+
+</html>
